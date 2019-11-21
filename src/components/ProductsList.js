@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import '../assets/Products.css'
+import {Link} from "react-router-dom"
 
 export default class ProductsList extends Component {
     state = {
@@ -32,10 +33,10 @@ export default class ProductsList extends Component {
                     console.log(element)
                     return (
                         <div className="prod" key={element._id}>
-                            <h2>{element.name}</h2>
+                            <h2>Nome: {element.name}</h2>
                             <img src={element.url} alt="produto"/>
-                            <h3>{element.price}</h3>
-                            <button onClick={() => this.sell(element._id)}>Vender</button>
+                            <h3>Preco: {element.price}</h3>
+                            <Link to="/buy"><button onClick={() => this.sell(element._id)}>Comprar</button></Link>
                         </div>    
                     )
                 })}

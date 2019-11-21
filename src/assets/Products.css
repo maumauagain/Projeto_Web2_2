@@ -7,13 +7,41 @@
 
 .prod{
     margin: 10px;
-    width: 25%;
+    width: 20%;
+
     text-align: center;
-    border: 1px solid black;
-    padding: 5px;
+    border: none;
+    padding: 20px;
     border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(153, 193, 211);
 }
 
 .prod img{
     width: 100%;
 }
+
+.prod button{
+    border-radius: 5px;
+    padding: 10px 40px;
+    border: none;
+    background-color: rgb(32, 107, 151);
+    color: white;
+    transition-property: all;
+    transition-duration: 0.7s;
+}
+
+.prod button:hover{
+    background-color: rgb(118, 245, 182);
+    color: black;
+}
+
+.prod button:focus{
+    outline: none;
+}
+
+@media screen and (max-width:1350px){
+    .prod{
+        width: 40%;
+    }
+} 

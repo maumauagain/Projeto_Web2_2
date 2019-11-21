@@ -1,0 +1,35 @@
+.buy{
+    margin: auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(49, 238, 228, 0.2);
+    border-radius: 10px;
+    padding: 15px 15px 150px 15px;
+}
+
+.buy a{
+    align-self: flex-start;
+    margin-left: 15px;
+    margin-top: 15px;
+    
+}
+
+.buy button{
+    padding: 10px 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(66, 224, 216);
+    transition-property: all;
+    transition-duration: 0.7s;
+    cursor: pointer ;
+}
+
+.buy button:hover{
+    background-color: rgb(62, 173, 168);
+}
+
+.buy button:focus{
+    outline: none;
+}
