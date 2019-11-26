@@ -10,7 +10,7 @@ export default class ProductsList extends Component {
 
     getProductsFromApi = () => {
         axios
-            .get("http://localhost:8080/prod", {
+            .get(`${process.env.REACT_APP_API_URL}/prod`, {
                 crossDomain: true
             })
             .then(result => {
